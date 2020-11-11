@@ -1,0 +1,65 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; PROGRAM TO ADD AN ARRAY OF TWO 16 BIT NUMBERS.
+    2 00000000         ; DATE: 28-10-2020
+    3 00000000         
+    4 00000000                 AREA             RESET, CODE, READONLY ;
+    5 00000000         ENTRY                                ;
+    6 00000000         START                                ;
+    7 00000000 E3A00101        MOV              R0, #0x40000000 ; copy the addr
+                                                            ess 0x40000000 to r
+                                                            egister R0
+    8 00000004 E5902000        LDR              R2, [R0]    ; load the value pr
+                                                            esent in R0 (LDR(H)
+                                                             = Half word) into 
+                                                            R2
+    9 00000008 E2800002        ADD              R0, R0, #02 ; Increament the ad
+                                                            dress 
+   10 0000000C E1D030B0        LDRH             R3, [R0]    ; Load the value pr
+                                                            esent in the R0 int
+                                                            o R3
+   11 00000010 E0824003        ADD              R4, R2, R3  ; add the values pr
+                                                            esent in the regist
+                                                            er's R2 and R3 and 
+                                                            then store it into 
+                                                            R4
+   12 00000014                 END                          ; END OF PROGRAM
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oday1_ex2.o -IC:\
+Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=day1_ex2.lst day1_ex2.a
+sm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 5 in file day1_ex2.asm
+   Uses
+      None
+Comment: ENTRY unused
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 4 in file day1_ex2.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 6 in file day1_ex2.asm
+   Uses
+      None
+Comment: START unused
+3 symbols
+323 symbols in table

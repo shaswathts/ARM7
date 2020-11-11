@@ -1,0 +1,103 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, CODE, READONLY
+    2 00000000         ENTRY
+    3 00000000         MAIN
+    4 00000000         
+    5 00000000 E59F0020        LDR              R0, =VALUE1 ;LOADING THE ADDRES
+                                                            S OF VALUE1 TO R0
+    6 00000004 E5901000        LDR              R1, [R0]    ;LOADING THE VALUE 
+                                                            PRESENT IN RO TO R1
+                                                            
+    7 00000008         
+    8 00000008 E2800004        ADD              R0, R0, #04 ;INCREAMENTING THE 
+                                                            ADDRESS LOCATION PR
+                                                            ESENT IN R0
+    9 0000000C E5902000        LDR              R2, [R0]    ;LOADING THE VALUE 
+                                                            PRESENT IN THE ADDR
+                                                            ESS OF R0 INTO R2 P
+                                                            OST INCREAMENT
+   10 00000010         
+   11 00000010 E0811002        ADD              R1, R1, R2  ;ADDING 'R1' AND 'R
+                                                            2' AND STORING/OVER
+                                                            WRITING IT INTO TO 
+                                                            'R1' 
+   12 00000014         
+   13 00000014 E3A00101        LDR              R0, =0x40000000 ;ASSIGNING AN I
+                                                            MMEDIATE ADDRESS LO
+                                                            CATION TO 'R0'
+   14 00000018 E5801000        STR              R1, [R0]    ;WRITTING THE VALUE
+                                                             OF R1 INTO THE MEM
+                                                            ORY ADDRESS HELD BY
+                                                             'R0'
+   15 0000001C         
+   16 0000001C EF000011        SWI              &11
+   17 00000020         
+   18 00000020 37E3C128 
+                       VALUE1  DCD              &37E3C128   ;ASSIGNING 37E3C128
+                                                             TO VARIABLE VALUE1
+                                                             WHICH IS POINTING 
+                                                            TO SOME ADDRESS
+   19 00000024 367402AA 
+                       VALUE2  DCD              &367402AA   ;ASSIGNING 367402AA
+                                                             TO VARIABLE VALUE2
+                                                             WHICH IS POINTING 
+                                                            TO SOME ADDRESS
+   20 00000028         
+   21 00000028                 END
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -o.\day2_ex1.o -IC
+:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=.\day2_ex1.lst ..\LAB
+_2\day2_ex1.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 2 in file ..\LAB_2\day2_ex1.asm
+   Uses
+      None
+Comment: ENTRY unused
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 3 in file ..\LAB_2\day2_ex1.asm
+   Uses
+      None
+Comment: MAIN unused
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file ..\LAB_2\day2_ex1.asm
+   Uses
+      None
+Comment: RESET unused
+VALUE1 00000020
+
+Symbol: VALUE1
+   Definitions
+      At line 18 in file ..\LAB_2\day2_ex1.asm
+   Uses
+      At line 5 in file ..\LAB_2\day2_ex1.asm
+Comment: VALUE1 used once
+VALUE2 00000024
+
+Symbol: VALUE2
+   Definitions
+      At line 19 in file ..\LAB_2\day2_ex1.asm
+   Uses
+      None
+Comment: VALUE2 unused
+5 symbols
+327 symbols in table

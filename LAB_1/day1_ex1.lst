@@ -1,0 +1,48 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,CODE,READONLY
+    2 00000000         ENTRY
+    3 00000000         START
+    4 00000000 E3A00001        MOV              R0, #1
+    5 00000004 E3A04004        MOV              R4, #4
+    6 00000008 E0845000        ADD              R5, R4,R0
+    7 0000000C                 END
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oday1_ex1.o -IC:\
+Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=day1_ex1.lst day1_ex1.a
+sm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 2 in file day1_ex1.asm
+   Uses
+      None
+Comment: ENTRY unused
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file day1_ex1.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file day1_ex1.asm
+   Uses
+      None
+Comment: START unused
+3 symbols
+323 symbols in table

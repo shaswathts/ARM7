@@ -1,1 +1,6 @@
-BLA   - Branch Always
+BLA   - Branch always
+BNE   - Branch never
+
+BCC   - Branch if carry clear
+BCS   - Branch if carry set
+

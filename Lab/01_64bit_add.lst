@@ -1,0 +1,64 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; Adding two 64 bit numbers
+    2 00000000                 AREA             RESET, CODE, READONLY
+    3 00000000                 ENTRY
+    4 00000000         START
+    5 00000000         
+    6 00000000 E3A00101        MOV              R0, #0x40000000 ;Higher byte of
+                                                             first number
+    7 00000004 E3A01111        MOV              R1, #0x40000004 ;Lower byte of 
+                                                            first number
+    8 00000008 E3A02121        MOV              R2, #0x40000008 ;Higher byte of
+                                                             second number
+    9 0000000C E3A03131        MOV              R3, #0x4000000c ;Lower byte of 
+                                                            second number 
+   10 00000010         
+   11 00000010 E3A04141        MOV              R4, #0X40000010 
+                                                            ;Answer higher byte
+                                                            
+   12 00000014 E3A05151        MOV              R5, #0X40000014 
+                                                            ;Answer lower byte
+   13 00000018         
+   14 00000018 E1A06001        MOV              R6, R1
+   15 0000001C E1A07003        MOV              R7, R3
+   16 00000020 E0968007        ADDS             R8, R6, R7
+   17 00000024 E5848000        STR              R8, [R4]
+   18 00000028         
+   19 00000028 E1A06000        MOV              R6, R0
+   20 0000002C E1A07002        MOV              R7, R2
+   21 00000030 E0A68007        ADC              R8, R6, R7
+   22 00000034 E5858000        STR              R8, [R5]
+   23 00000038         
+   24 00000038                 END
+Command Line: --debug --xref --device=DARMP --apcs=interwork -o01_64bit_add.o -
+IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=01_64bit_add.lst 01
+_64bit_add.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 2 in file 01_64bit_add.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 4 in file 01_64bit_add.asm
+   Uses
+      None
+Comment: START unused
+2 symbols
+322 symbols in table

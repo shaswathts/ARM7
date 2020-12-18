@@ -1,0 +1,4 @@
+Dependencies for Project 'led_blinking', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4A02A570)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\01_led.c)(0x5FDCAC64)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "01_led.o" --omf_browse "01_led.crf" --depend "01_led.d")
+I (C:\Keil\ARM\INC\Philips\lpc214x.h)(0x4A02A636)

@@ -1,0 +1,1 @@
+--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list ".\day1_ex1.lst" --xref -o ".\day1_ex1.o" "..\LAB_1\day1_ex1.asm"

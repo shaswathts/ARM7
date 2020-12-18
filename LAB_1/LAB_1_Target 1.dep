@@ -1,2 +1,2 @@
 Dependencies for Project 'LAB_1', Target 'Target 1': (DO NOT MODIFY !)
-F (..\LAB_2\day2_ex1.asm)(0x5FA25797)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list ".\day2_ex1.lst" --xref -o ".\day2_ex1.o")
+F (..\LAB_2\day2_ex1.asm)(0x00000000)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list ".\day2_ex1.lst" --xref -o ".\day2_ex1.o")

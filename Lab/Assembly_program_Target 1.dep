@@ -1,0 +1,3 @@
+Dependencies for Project 'Assembly_program', Target 'Target 1': (DO NOT MODIFY !)
+F (.\01_64bit_add.asm)(0x5FDC6410)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "01_64bit_add.lst" --xref -o "01_64bit_add.o")
+F (..\LAB_1\day1_ex1.asm)(0x5F9925A8)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list ".\day1_ex1.lst" --xref -o ".\day1_ex1.o")

@@ -386,9 +386,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>day1_ex2.asm</FileName>
+              <FileName>day2_ex1.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\day1_ex2.asm</FilePath>
+              <FilePath>..\LAB_2\day2_ex1.asm</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+B:\Lab\ES_LAB\lpc21xx\led_blinking.uvproj
+Project File Date:  12/18/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling 01_led.c...
+01_led.c(9): warning:  #951-D: return type of function "main" must be "int"
+01_led.c(18): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=548 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"lpc21xx.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling 01_led.c...
+01_led.c(9): warning:  #951-D: return type of function "main" must be "int"
+linking...
+Program Size: Code=548 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"lpc21xx.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=548 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"led_blink.axf" - 0 Error(s), 0 Warning(s).

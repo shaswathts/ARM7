@@ -1,0 +1,1 @@
+-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "2nd_sessionals_1stquest.o" --omf_browse "2nd_sessionals_1stquest.crf" --depend "2nd_sessionals_1stquest.d" "2nd_sessionals_1stQuest.c"

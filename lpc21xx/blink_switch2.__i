@@ -1,0 +1,1 @@
+-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "blink_switch2.o" --omf_browse "blink_switch2.crf" --depend "blink_switch2.d" "blink_switch2.c"

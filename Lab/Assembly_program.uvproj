@@ -386,9 +386,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>01_64bit_add.asm</FileName>
+              <FileName>03_swapNibble.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\01_64bit_add.asm</FilePath>
+              <FilePath>.\03_swapNibble.asm</FilePath>
             </File>
           </Files>
         </Group>

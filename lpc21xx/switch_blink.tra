@@ -9,7 +9,7 @@
 ### ADS-LD Output File: 'switch_blink.axf'
 ### ADS-LD Command File: 'switch_blink.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'switch_blink.lnp', Handle=0x00000A00
+### Creating CmdFile 'switch_blink.lnp', Handle=0x00000C90
 ### Writing '.lnp' file
 ### ADS-LD Command file 'switch_blink.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -1,0 +1,19 @@
+*** Creating Trace Output File 'switch_blink2.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"blink_switch2.o"'
+### ADS-LD Command completed:
+--device DARMP "startup.o" "blink_switch2.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\switch_blink2.map" -o "switch_blink2.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'switch_blink2.axf'
+### ADS-LD Command File: 'switch_blink2.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'switch_blink2.lnp', Handle=0x00000DF8
+### Writing '.lnp' file
+### ADS-LD Command file 'switch_blink2.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

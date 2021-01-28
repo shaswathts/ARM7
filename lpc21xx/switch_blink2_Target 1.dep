@@ -1,0 +1,4 @@
+Dependencies for Project 'switch_blink2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4A02A570)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\blink_switch2.c)(0x6011741B)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "blink_switch2.o" --omf_browse "blink_switch2.crf" --depend "blink_switch2.d")
+I (C:\Keil\ARM\INC\Philips\lpc214x.h)(0x4A02A636)

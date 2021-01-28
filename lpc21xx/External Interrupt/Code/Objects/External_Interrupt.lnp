@@ -1,0 +1,4 @@
+--device DARMP ".\objects\startup.o" ".\objects\ext_interrupt_buzzer.o" --strict --scatter ".\Objects\External_Interrupt.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Listings\External_Interrupt.map" -o ".\Objects\External_Interrupt.axf"

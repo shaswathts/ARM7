@@ -1,0 +1,1 @@
+-c --device DARMP -D__EVAL -g -O0 --apcs=interwork --split_sections -I "C:\Keil\ARM\INC\Philips" -o ".\Objects\ext_interrupt_buzzer.o" --omf_browse ".\Objects\ext_interrupt_buzzer.crf" --depend ".\Objects\ext_interrupt_buzzer.d" "ext_interrupt_buzzer.c"

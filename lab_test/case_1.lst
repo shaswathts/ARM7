@@ -1,0 +1,108 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;
+    2 00000000                 AREA             RESET, CODE, READONLY
+    3 00000000                 ENTRY
+    4 00000000         START
+    5 00000000 E3A00101        mov              r0, #0x40000000 ;Array counter
+    6 00000004 E3A05111        mov              r5, #0x40000004 
+                                                            ;Starting of array
+    7 00000008 E3A041C1        mov              r4, #0x40000030 ;Final answer
+    8 0000000C E3A0B1D1        mov              r11, #0x40000034 
+                                                            ;Max num of array
+    9 00000010 E3A0C1E1        mov              r12, #0x40000038 
+                                                            ;Min num of array
+   10 00000014         
+   11 00000014 E3A01000        mov              r1, #00     ;Init counter to ze
+                                                            ro
+   12 00000018 E3A06000        mov              r6, #00     ;Init Accumulator t
+                                                            o zero
+   13 0000001C E3A07000        mov              r7, #00     ;min
+   14 00000020 E3A08000        mov              r8, #00     ;max
+   15 00000024         
+   16 00000024         ;Addition of array elements
+   17 00000024         loop
+   18 00000024 E5952000        ldr              r2, [r5]    ;Loading the array 
+                                                            elements to reg R2
+   19 00000028 E0A66002        adc              r6, r6, r2  ;Accumulating the a
+                                                            rray elements in re
+                                                            g R6
+   20 0000002C E3520000        cmp              r2, #00     ;Exit the loop if r
+                                                            eg R2 is equal to z
+                                                            ero
+   21 00000030 0A000002        beq              exit        ;Comparing ZERO wit
+                                                            h array elements   
+                                                                     
+   22 00000034 12855004        addne            r5, r5, #04 ;If cmp is not equa
+                                                            l to zero than incr
+                                                            eament mem address
+   23 00000038 12811001        addne            r1, r1, #01 ;If cmp is not equa
+                                                            l to zero than incr
+                                                            eament counter
+   24 0000003C 1AFFFFF8        bne              loop
+   25 00000040         
+   26 00000040         exit
+   27 00000040 E5801000        str              r1, [r0]    ;Store the counter 
+                                                            value to 0x40000000
+                                                            
+   28 00000044 E5846000        str              r6, [r4]    ;Store the final an
+                                                            swer to 0x40000030
+   29 00000048         
+   30 00000048         here
+   31 00000048 EAFFFFFE        bal              here
+   32 0000004C         
+   33 0000004C                 END
+Command Line: --debug --xref --device=DARMP --apcs=interwork -ocase_1.o -IC:\Ke
+il\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=case_1.lst case_1.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 2 in file case_1.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 4 in file case_1.asm
+   Uses
+      None
+Comment: START unused
+exit 00000040
+
+Symbol: exit
+   Definitions
+      At line 26 in file case_1.asm
+   Uses
+      At line 21 in file case_1.asm
+Comment: exit used once
+here 00000048
+
+Symbol: here
+   Definitions
+      At line 30 in file case_1.asm
+   Uses
+      At line 31 in file case_1.asm
+Comment: here used once
+loop 00000024
+
+Symbol: loop
+   Definitions
+      At line 17 in file case_1.asm
+   Uses
+      At line 24 in file case_1.asm
+Comment: loop used once
+5 symbols
+325 symbols in table

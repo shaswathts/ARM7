@@ -1,0 +1,6 @@
+Dependencies for Project '2nd_LabTest', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4A02A570)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (..\lpc21xx\2nd_sessionals_1stQuest.c)(0x6012583B)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "2nd_sessionals_1stquest.o" --omf_browse "2nd_sessionals_1stquest.crf" --depend "2nd_sessionals_1stquest.d")
+I (C:\Keil\ARM\INC\Philips\lpc214x.h)(0x60125A61)
+F (..\lpc21xx\2nd_sessionals_2nd_quest.c)(0x60126F18)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "2nd_sessionals_2nd_quest.o" --omf_browse "2nd_sessionals_2nd_quest.crf" --depend "2nd_sessionals_2nd_quest.d")
+I (C:\Keil\ARM\INC\Philips\lpc214x.h)(0x60125A61)

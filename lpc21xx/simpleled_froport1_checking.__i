@@ -1,0 +1,1 @@
+-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "simpleled_froport1_checking.o" --omf_browse "simpleled_froport1_checking.crf" --depend "simpleled_froport1_checking.d" "simpleLED_FroPort1_checking.c"

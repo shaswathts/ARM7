@@ -1,0 +1,51 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;
+    2 00000000                 AREA             RESET, CODE, READONLY
+    3 00000000                 ENTRY
+    4 00000000         START
+    5 00000000 E3A00101        MOV              R0, #0x40000000
+    6 00000004 E3A05111        MOV              R5, #0x40000004
+    7 00000008         
+    8 00000008 E5D01000        LDRB             R1, [R0]
+    9 0000000C E5D02001        LDRB             R2, [R0, #01]
+   10 00000010 E5D03002        LDRB             R3, [R0, #02]
+   11 00000014 E5D04003        LDRB             R4, [R0, #03]
+   12 00000018         
+   13 00000018 E5C52000        STRB             R2, [R5]
+   14 0000001C E5C51001        STRB             R1, [R5, #01]
+   15 00000020 E5C54002        STRB             R4, [R5, #02]
+   16 00000024 E5C53003        STRB             R3, [R5, #03]
+   17 00000028         
+   18 00000028                 END
+Command Line: --debug --xref --device=DARMP --apcs=interwork -o03_swapNibble.o 
+-IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=03_swapNibble.lst 
+03_swapNibble.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 2 in file 03_swapNibble.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 4 in file 03_swapNibble.asm
+   Uses
+      None
+Comment: START unused
+2 symbols
+322 symbols in table

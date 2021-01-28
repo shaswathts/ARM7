@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+B:\Lab\ES_LAB\lpc21xx\switch_blink2.uvproj
+Project File Date:  01/27/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling blink_switch2.c...
+blink_switch2.c(3): warning:  #1295-D: Deprecated declaration delay - give arg types
+blink_switch2.c(4): warning:  #951-D: return type of function "main" must be "int"
+linking...
+Program Size: Code=568 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"switch_blink2.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling blink_switch2.c...
+blink_switch2.c(3): warning:  #1295-D: Deprecated declaration delay - give arg types
+blink_switch2.c(4): warning:  #951-D: return type of function "main" must be "int"
+linking...
+Program Size: Code=564 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"switch_blink2.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=564 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"switch_blink2.axf" - 0 Error(s), 0 Warning(s).

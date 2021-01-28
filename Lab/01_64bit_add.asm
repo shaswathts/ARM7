@@ -7,18 +7,17 @@ START
 	MOV R1, #0x40000004	;Lower byte of first number
 	MOV R2, #0x40000008	;Higher byte of second number
 	MOV R3, #0x4000000c	;Lower byte of second number 
-	
-	MOV R4, #0X40000010	;Answer higher byte
-	MOV R5, #0X40000014	;Answer lower byte
+	MOV R5, #0x40000010	;Higher byte of second number
+	MOV R6, #0x40000014	;Lower byte of second number
 
-	MOV R6, R1
-	MOV R7, R3
-	ADDS R8, R6, R7
-	STR R8, [R4]
+	LDR R8, [R1]
+	LDR R10, [R3]
+	ADDS R4, R8, R10
+	STR R4, [R6]
 
-	MOV R6, R0
-	MOV R7, R2
-	ADC R8, R6, R7
-	STR R8, [R5]	
+	LDR R8, [R0]
+	LDR R10, [R2]
+	ADC R4, R8, R10
+	STR R4, [R5]
 
 	END

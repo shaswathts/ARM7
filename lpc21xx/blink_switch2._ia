@@ -1,0 +1,1 @@
+--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "blink_switch2.lst" --xref -o "blink_switch2.o" "blink_switch2.asm"

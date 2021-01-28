@@ -27,13 +27,13 @@
     <TargetOption>
       <CLKADS>12000000</CLKADS>
       <OPTTT>
-        <gFlags>0</gFlags>
+        <gFlags>1</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
         <RunSim>1</RunSim>
         <RunTarget>0</RunTarget>
       </OPTTT>
       <OPTHX>
-        <HexSelection>1</HexSelection>
+        <HexSelection>0</HexSelection>
         <FlashByte>65535</FlashByte>
         <HexRangeLowAddress>0</HexRangeLowAddress>
         <HexRangeHighAddress>0</HexRangeHighAddress>
@@ -117,7 +117,7 @@
         <tRbox>1</tRbox>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>-1</nTsel>
+        <nTsel>0</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -128,17 +128,29 @@
         <tDlgDll></tDlgDll>
         <tDlgPa></tDlgPa>
         <tIfile></tIfile>
-        <pMon></pMon>
+        <pMon>BIN\UL2ARM.DLL</pMon>
       </DebugOpt>
+      <TargetDriverDllRegistry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGDARM</Key>
+          <Name>(134=-1,-1,-1,-1,0)(135=-1,-1,-1,-1,0)(153=-1,-1,-1,-1,0)(154=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(145=-1,-1,-1,-1,0)(147=-1,-1,-1,-1,0)(80=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(100=938,123,1511,295,1)(101=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=939,296,1527,491,1)(113=-1,-1,-1,-1,0)(112=-1,-1,-1,-1,0)(137=-1,-1,-1,-1,0)(138=-1,-1,-1,-1,0)(117=-1,-1,-1,-1,0)(146=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(114=-1,-1,-1,-1,0)(141=-1,-1,-1,-1,0)(142=-1,-1,-1,-1,0)(143=-1,-1,-1,-1,0)(144=-1,-1,-1,-1,0)(115=-1,-1,-1,-1,0)(116=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>ARMDBGFLAGS</Key>
+          <Name>-T5F</Name>
+        </SetRegEntry>
+      </TargetDriverDllRegistry>
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
-        <aLwin>0</aLwin>
+        <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
-        <viewmode>0</viewmode>
+        <viewmode>1</viewmode>
         <vrSel>0</vrSel>
         <aSym>0</aSym>
         <aTbox>0</aTbox>
@@ -153,7 +165,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>1</newCpu>
+        <newCpu>0</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <LintExecutable></LintExecutable>
@@ -167,15 +179,15 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>25</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>9</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\02_switch.c</PathWithFileName>
       <FilenameWithoutPath>02_switch.c</FilenameWithoutPath>
@@ -183,9 +195,9 @@
   </Group>
 
   <WinLayout>
-    <sActiveDebugView></sActiveDebugView>
-    <iActiveDebugViewLocation>0</iActiveDebugViewLocation>
-    <sActiveBuildView></sActiveBuildView>
+    <sActiveDebugView>Default</sActiveDebugView>
+    <iActiveDebugViewLocation>1</iActiveDebugViewLocation>
+    <sActiveBuildView>Build</sActiveBuildView>
     <iActiveBuildViewLocation>0</iActiveBuildViewLocation>
     <View>
       <ViewName>Default</ViewName>
@@ -1281,10 +1293,10 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
         <Visible>0</Visible>
@@ -1306,13 +1318,13 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
-        <Visible>1</Visible>
+        <Visible>0</Visible>
         <Dynamic>0</Dynamic>
       </Window>
       <Window>
@@ -1331,13 +1343,13 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
-        <Visible>1</Visible>
+        <Visible>0</Visible>
         <Dynamic>0</Dynamic>
       </Window>
       <Window>
@@ -1356,13 +1368,13 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
-        <Visible>1</Visible>
+        <Visible>0</Visible>
         <Dynamic>0</Dynamic>
       </Window>
       <Window>
@@ -1381,10 +1393,10 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
         <Visible>0</Visible>
@@ -1406,13 +1418,13 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
-        <ActiveTab>1</ActiveTab>
-        <Visible>1</Visible>
+        <ActiveTab>0</ActiveTab>
+        <Visible>0</Visible>
         <Dynamic>0</Dynamic>
       </Window>
       <Window>
@@ -1431,10 +1443,10 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
         <Visible>0</Visible>
@@ -1456,10 +1468,10 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
         <Visible>0</Visible>
@@ -1481,10 +1493,10 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
         <Visible>0</Visible>
@@ -1506,13 +1518,13 @@
         <DockedRect_left>770</DockedRect_left>
         <DockedRect_bottom>782</DockedRect_bottom>
         <DockedRect_right>1536</DockedRect_right>
-        <FloatingRect_top>231</FloatingRect_top>
-        <FloatingRect_left>1169</FloatingRect_left>
-        <FloatingRect_bottom>585</FloatingRect_bottom>
-        <FloatingRect_right>1402</FloatingRect_right>
+        <FloatingRect_top>383</FloatingRect_top>
+        <FloatingRect_left>1253</FloatingRect_left>
+        <FloatingRect_bottom>737</FloatingRect_bottom>
+        <FloatingRect_right>1486</FloatingRect_right>
         <ContainerPercent>100</ContainerPercent>
         <ActiveTab>0</ActiveTab>
-        <Visible>1</Visible>
+        <Visible>0</Visible>
         <Dynamic>0</Dynamic>
       </Window>
     </View>
@@ -1527,9 +1539,9 @@
       <Documents>
         <Doc>
           <Name>.\02_switch.c</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>25</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>15</CurrentLine>
+          <CurrentLine>9</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

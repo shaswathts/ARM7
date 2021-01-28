@@ -1,0 +1,61 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;
+    2 00000000                 AREA             RESET, CODE, READONLY
+    3 00000000                 ENTRY
+    4 00000000         START
+    5 00000000 E3A00101        MOV              R0, #0x40000000 ;Higher byte of
+                                                             first number
+    6 00000004 E3A01111        MOV              R1, #0x40000004 ;Lower byte of 
+                                                            first number
+    7 00000008 E3A02121        MOV              R2, #0x40000008 ;Higher byte of
+                                                             second number
+    8 0000000C E3A03131        MOV              R3, #0x4000000c ;Lower byte of 
+                                                            second number 
+    9 00000010 E3A05141        MOV              R5, #0x40000010 ;Higher byte of
+                                                             second number
+   10 00000014 E3A06151        MOV              R6, #0x40000014 ;Lower byte of 
+                                                            second number
+   11 00000018         
+   12 00000018 E5918000        LDR              R8, [R1]
+   13 0000001C E593A000        LDR              R10, [R3]
+   14 00000020 E058400A        SUBS             R4, R8, R10
+   15 00000024 E5864000        STR              R4, [R6]
+   16 00000028         
+   17 00000028 E5908000        LDR              R8, [R0]
+   18 0000002C E592A000        LDR              R10, [R2]
+   19 00000030 E0C8400A        SBC              R4, R8, R10
+   20 00000034 E5854000        STR              R4, [R5]
+   21 00000038         
+   22 00000038                 END
+Command Line: --debug --xref --device=DARMP --apcs=interwork -o02_64bit_sub.o -
+IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=02_64bit_sub.lst 02
+_64bit_sub.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 2 in file 02_64bit_sub.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 4 in file 02_64bit_sub.asm
+   Uses
+      None
+Comment: START unused
+2 symbols
+322 symbols in table

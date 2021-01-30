@@ -217,62 +217,10 @@
     </File>
   </Group>
 
-  <AlienFiles>
-    <PathWithFilename>B:\Lab\ES_LAB\lab_test\2nd_LabTest_1stOne.c</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>B:\Lab\ES_LAB\lab_test\2nd_LabTest_2ndOne.c</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
   <WinLayout>
-    <sActiveDebugView>Default</sActiveDebugView>
-    <iActiveDebugViewLocation>1</iActiveDebugViewLocation>
-    <sActiveBuildView>Build</sActiveBuildView>
+    <sActiveDebugView></sActiveDebugView>
+    <iActiveDebugViewLocation>0</iActiveDebugViewLocation>
+    <sActiveBuildView></sActiveBuildView>
     <iActiveBuildViewLocation>0</iActiveBuildViewLocation>
     <View>
       <ViewName>Default</ViewName>
@@ -1610,16 +1558,16 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
-          <Name>B:\Lab\ES_LAB\lab_test\2nd_LabTest_1stOne.c</Name>
+          <Name>..\lpc21xx\2nd_sessionals_1stQuest.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>B:\Lab\ES_LAB\lab_test\2nd_LabTest_2ndOne.c</Name>
+          <Name>..\lpc21xx\2nd_sessionals_2nd_quest.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>

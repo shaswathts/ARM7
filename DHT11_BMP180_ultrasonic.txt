@@ -6,6 +6,8 @@
 #include <LiquidCrystal.h>
 #include <Arduino.h>
 
+#define LDR 1
+#define LED 3
 #define inp 11
 #define ECHO 12
 #define TRIG 13
@@ -58,12 +60,35 @@ void setup() {
   }
   bmp180.resetToDefaults();
   bmp180.setSamplingMode(BMP180MI::MODE_UHR); 
+
+  // LDR sensor
+  pinMode(LDR, INPUT);
+  pinMode(LED, OUTPUT);
 }
 
 
 void loop() {
   // put your main code here, to run repeatedly:
   const int stat = digitalRead(inp);
+
+  long ldr_range = analogRead(LDR);
+  if(ldr_range >= 500) {
+    digitalWrite(LED, HIGH);
+    LCD.setCursor(0, 0);
+    LCD.print("LDR RANGE:");
+    LCD.print(ldr_range);
+    delay(1000);
+    LCD.clear();
+  }
+  else {
+    digitalWrite(LED, LOW); 
+    LCD.setCursor(0, 0);
+    LCD.print("LDR RANGE:");
+    LCD.print(ldr_range);
+    delay(1000);
+    LCD.clear(); 
+  }
+    
   long bmp_tem = bmp180.measureTemperature();
 
   if(bmp_tem != 0) {

@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
- <FRAME activewindow="0">
-  <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffffb20000000c000000ce060000fa030000</PLACEMENT>
+ <FRAME activewindow="1">
+  <PLACEMENT>2c0000000200000003000000ffffffffffffffffffffffffffffffffb20000000c000000ce060000fa030000</PLACEMENT>
   <WINDOW type="default" module="ISIS"/>
+  <WINDOW type="default" module="STARTUP"/>
  </FRAME>
  <MODULE name="VSMDEBUG">
   <PWI>
@@ -168,7 +169,7 @@
      <ITEM name="TopLineAddress">E0008000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="4" x="388" flags="0000000a" y="500" h="16" pid="32771" iid="1">
+   <POPUP w="12" x="1134" flags="0000000b" y="325" h="16" pid="32771" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -256,7 +257,7 @@
      <ITEM name="HexMode">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="450" x="68" flags="00000023" y="180" h="250" pid="0" iid="8">
+   <POPUP w="450" x="68" flags="00008023" y="180" h="250" pid="0" iid="8">
     <PROPERTIES>
      <ITEM name="AutoEcho">0</ITEM>
      <ITEM name="HexMode">0</ITEM>

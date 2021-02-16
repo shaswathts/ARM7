@@ -1,0 +1,121 @@
+#include <BMP180I2C.h>
+#include <BMP180MI.h>
+#include <BMP180TwoWire.h>
+#include <DHT.h>
+#include <DHT_U.h>
+#include <LiquidCrystal.h>
+#include <Arduino.h>
+
+#define inp 11
+#define ECHO 12
+#define TRIG 13
+#define DHT_11 2
+#define DHT_TYPE DHT11
+#define I2C_ADDRESS 0x77
+
+const int D7 = 4, D6 = 5, D5 = 6, D4 = 7, RS = 9, EN = 8;
+LiquidCrystal LCD(RS, EN, D4, D5, D6, D7);
+DHT dht(DHT_11, DHT_TYPE); // Creating the object dht
+BMP180I2C bmp180(I2C_ADDRESS); // Creating the object bmp180
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+  // Setting the baudrate
+  Serial.begin(9600);
+  
+  // DHT11 init
+  dht.begin();
+
+  // LCD init
+  LCD.begin(16, 2);
+  LCD.print(" DHT11 ");
+  delay(1000);
+  LCD.clear();  
+  
+  // Ultrasonic
+  pinMode(TRIG, OUTPUT);
+  pinMode(ECHO, INPUT);
+
+  // Switch pin
+  pinMode(inp, INPUT);
+
+  // BMP180 init
+  while(!Serial);
+  Wire.begin();
+  if (!bmp180.begin()) {
+    LCD.setCursor(1, 1);
+    LCD.print("BMP FAIL!");
+    delay(1000);
+    LCD.clear();  
+  }
+  else {
+    LCD.setCursor(2, 1);
+    LCD.print("BMP OK!");
+    delay(1000);
+    LCD.clear(); 
+  }
+  bmp180.resetToDefaults();
+  bmp180.setSamplingMode(BMP180MI::MODE_UHR); 
+}
+
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  const int stat = digitalRead(inp);
+  long bmp_tem = bmp180.measureTemperature();
+
+  if(bmp_tem != 0) {
+    bmp_tem = bmp180.getTemperature();
+  }
+  LCD.setCursor(0, 0);
+  LCD.print("BMP TEMP:");
+  LCD.print(bmp_tem);
+  delay(1000);
+  LCD.clear();
+
+  long bmp_pre = bmp180.measurePressure();
+
+  if(bmp_pre != 0) {
+    bmp_pre = bmp180.getPressure();
+  }
+  LCD.setCursor(0, 0);
+  LCD.print("BMP PRESSURE:");
+  LCD.print(bmp_pre);
+  delay(1000);
+  LCD.clear();
+  
+  
+  if(stat == 1) {
+      float t = dht.readTemperature();
+      LCD.setCursor(1, 0);
+      LCD.print("Temp: ");
+      LCD.print(t);
+      //delay(1000);
+      LCD.clear();
+      LCD.setCursor(2, 1);
+      float h = dht.readHumidity();
+      LCD.print("Humidity: ");
+      LCD.print(h);
+      delay(1000);
+      LCD.clear(); 
+  } 
+  else {
+      digitalWrite(TRIG, LOW);
+      delay(10);
+      digitalWrite(TRIG, HIGH);
+      delay(15);
+      digitalWrite(TRIG, LOW);
+    
+      long time_u = pulseIn(ECHO, HIGH);
+      long distCM = 0.034*(time_u/2);
+    
+      LCD.setCursor(1, 0);
+      LCD.print("Distance: ");
+      LCD.print(distCM);
+      LCD.print("cm");
+      delay(1000);
+      LCD.clear();  
+  }
+}

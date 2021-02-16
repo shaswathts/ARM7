@@ -174,7 +174,7 @@
         <Wi>
           <IntNumber>0</IntNumber>
           <FirstString>*((volatile unsigned long *) 0xE0028010))</FirstString>
-          <SecondString>0080000000000000000000000000E0FFFFFFEF41010000006400000000D0ED902E0000002A2828766F6C6174696C6520756E7369676E6564206C6F6E67202A292030784530303238303130292900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000034020000</SecondString>
+          <SecondString>FF00000000000000000000000000E0FFFFFFEF41000000006400000000C2EB0B000000002A2828766F6C6174696C6520756E7369676E6564206C6F6E67202A292030784530303238303130292900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000</SecondString>
         </Wi>
       </LogicAnalyzers>
     </TargetOption>
@@ -201,9 +201,9 @@
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>2</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -215,21 +215,21 @@
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>45</TopLine>
-      <CurrentLine>49</CurrentLine>
+      <TopLine>73</TopLine>
+      <CurrentLine>97</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\2nd_sessionals_2nd_quest.c</PathWithFileName>
       <FilenameWithoutPath>2nd_sessionals_2nd_quest.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1626,9 +1626,9 @@
         </Doc>
         <Doc>
           <Name>.\2nd_sessionals_2nd_quest.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>45</TopLine>
-          <CurrentLine>49</CurrentLine>
+          <ColumnNumber>12</ColumnNumber>
+          <TopLine>73</TopLine>
+          <CurrentLine>97</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\simpleLED_FroPort1_checking.c</Name>

@@ -2,15 +2,15 @@
 ### Preparing for ADS-LD.
 ### Creating ADS-LD Command Line
 ### List of Objects: adding '"startup.o"'
-### List of Objects: adding '"2nd_sessionals_2nd_quest.o"'
+### List of Objects: adding '"pal_vol_in_lpc2148.o"'
 ### ADS-LD Command completed:
---device DARMP "startup.o" "2nd_sessionals_2nd_quest.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DARMP "startup.o" "pal_vol_in_lpc2148.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\ALL_LPC214x_project.map" -o "ALL_LPC214x_project.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: 'ALL_LPC214x_project.axf'
 ### ADS-LD Command File: 'ALL_LPC214x_project.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'ALL_LPC214x_project.lnp', Handle=0x00000280
+### Creating CmdFile 'ALL_LPC214x_project.lnp', Handle=0x00000F20
 ### Writing '.lnp' file
 ### ADS-LD Command file 'ALL_LPC214x_project.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

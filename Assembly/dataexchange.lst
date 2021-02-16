@@ -1,0 +1,69 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000         START
+    4 00000000 E3A00101        MOV              r0, #0x40000000
+    5 00000004 E3A01121        MOV              r1, #0x40000008
+    6 00000008 E3A04009        MOV              r4, #09
+    7 0000000C         
+    8 0000000C E5902000 
+                       loop    ldr              r2,[r0]
+    9 00000010 E1A05002        mov              r5,r2
+   10 00000014 E5916000        ldr              r6,[r1]
+   11 00000018 E4806004        str              r6,[r0],#04
+   12 0000001C E4815004        str              r5,[r1],#04
+   13 00000020 E2544001        subs             r4,#01
+   14 00000024 E3540000        cmp              r4,#00
+   15 00000028 1AFFFFF7        bne              loop
+   16 0000002C EAFFFFFE 
+                       stop    b                stop
+   17 00000030         
+   18 00000030                 end
+Command Line: --debug --xref --device=DARMP --apcs=interwork -odataexchange.o -
+IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=dataexchange.lst da
+taexchange.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file dataexchange.asm
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file dataexchange.asm
+   Uses
+      None
+Comment: START unused
+loop 0000000C
+
+Symbol: loop
+   Definitions
+      At line 8 in file dataexchange.asm
+   Uses
+      At line 15 in file dataexchange.asm
+Comment: loop used once
+stop 0000002C
+
+Symbol: stop
+   Definitions
+      At line 16 in file dataexchange.asm
+   Uses
+      At line 16 in file dataexchange.asm
+Comment: stop used once
+4 symbols
+324 symbols in table

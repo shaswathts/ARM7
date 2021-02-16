@@ -2,15 +2,15 @@
 ### Preparing for ADS-LD.
 ### Creating ADS-LD Command Line
 ### List of Objects: adding '"startup.o"'
-### List of Objects: adding '"2nd_sessionals_2nd_quest.o"'
+### List of Objects: adding '"palindrome.o"'
 ### ADS-LD Command completed:
---device DARMP "startup.o" "2nd_sessionals_2nd_quest.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DARMP "startup.o" "palindrome.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\2nd_LabTest.map" -o "2nd_LabTest.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '2nd_LabTest.axf'
 ### ADS-LD Command File: '2nd_LabTest.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '2nd_LabTest.lnp', Handle=0x00000934
+### Creating CmdFile '2nd_LabTest.lnp', Handle=0x0000077C
 ### Writing '.lnp' file
 ### ADS-LD Command file '2nd_LabTest.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

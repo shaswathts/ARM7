@@ -61,6 +61,7 @@ int main(void)
 {
 	pll(); // Set CCLK=60Mhz and PCLK=60Mhz 
 	InitUART0();
+	PINSEL0 |= 0x05;
 	IO1DIR |= 0xFFFFffff;
 	
 	while(1)		
@@ -72,7 +73,6 @@ int main(void)
 			IOSET1 |= (1<<16);
 			delay(100);
 			IOCLR1 |= (1<<16);
-	
 			break;
 
 		case 'b':

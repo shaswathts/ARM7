@@ -1,0 +1,1 @@
+-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "palindrome.o" --omf_browse "palindrome.crf" --depend "palindrome.d" "palindrome.c"

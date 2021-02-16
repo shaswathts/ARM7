@@ -1,0 +1,2 @@
+Dependencies for Project 'ALLASM', Target 'Target 1': (DO NOT MODIFY !)
+F (.\dataexchange.asm)(0x602931E4)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "dataexchange.lst" --xref -o "dataexchange.o")

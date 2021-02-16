@@ -22,12 +22,12 @@ void pll()                  //Fosc=12Mhz,CCLK=60Mhz,PCLK=60MHz
 
 void InitUART0()
 {
-  PINSEL0 = 0x5;  /* Select TxD for P0.0 and RxD for P0.1 */ 
-  U0LCR	= 3 | (1<<7) ; /* 8 bits, no Parity, 1 Stop bit | DLAB set to 1  */
-  U0DLL	= 110;
-  U0DLM = 1;	
-  U0FDR = (MULVAL<<4) | DIVADDVAL; /* MULVAL=15(bits - 7:4) , DIVADDVAL=0(bits - 3:0)  */
-  U0LCR &= 0x0F; // Set DLAB=0 to lock MULVAL and DIVADDVAL
+  //PINSEL0 = 0x01;  /* Select TxD for P0.0 and RxD for P0.1 */ 
+  U0LCR	= 0x083; /* 8 bits, no Parity, 1 Stop bit | DLAB set to 1  */
+  U0DLL	= 0x87;
+  U0DLM = 0x01;	
+  //U0FDR = (MULVAL<<4) | DIVADDVAL; /* MULVAL=15(bits - 7:4) , DIVADDVAL=0(bits - 3:0)  */
+  U0LCR = 0x03; // Set DLAB=0 to lock MULVAL and DIVADDVAL
   //BaudRate is now ~9600 and we are ready for UART communication!
  
 }
@@ -61,6 +61,8 @@ int main(void)
 {
 	pll(); // Set CCLK=60Mhz and PCLK=60Mhz 
 	InitUART0();
+	PINSEL1 |= 0x00;
+	PINSEL0 |= 0x05;
 	IO1DIR |= 0xFFFFffff;
 	
 	while(1)		
